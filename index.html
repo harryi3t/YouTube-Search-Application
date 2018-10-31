@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search</title>
+  </head>
+  <body>
+    <div id="buttons" class="row">
+      <label> 
+        <input class="s3 offset-s3 col" id="query" value='Search' type="text"/> 
+        <button class=" s1 col waves-effect waves-light btn" disabled="true" id="search-button" onclick="search()">Search</button>
+      </label>
+      <div class="col s2">
+        <select id="sort-select">
+          <option value="" disabled selected>Sort By</option>
+          <option value="title">Title</option>
+          <option value="publishedAt">Published Date</option>
+        </select>        
+      </div>
+
+    </div>
+    <div id="search-container">
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="auth.js"></script>
+    <script src="logic.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </body>
+  <style type="text/css">
+    #buttons {
+      padding: 20px;
+    }
+  </style>
+</html>
