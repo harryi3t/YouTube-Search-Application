@@ -1,4 +1,4 @@
-Project 1: YouTube Search Application
+# Project 1: YouTube Search Application
 
 Steps to access project
 
@@ -11,6 +11,8 @@ Steps to access project
 7. Click on the play icon in the results to play the videos.
 8. Please find attached 2 screenshots.
 
-Details-
-Name : Anand Mandloi 
-College : IIIT Allahabad
+## Details-
+
+### Name : Anand Mandloi 
+
+### College : IIIT Allahabad
