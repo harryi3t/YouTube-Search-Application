@@ -108,13 +108,17 @@ function sort_items(items, sort_by) {
 
 	var len = items.length;
 	var unsorted;
+	var x, y;
+
 
 	// As number of elemnts is very less, thus using bubble sort wil work for our use case.
 	for (i = 0; i < len; i++) {
 		unsorted = false;
 		for (j = 0; j < len-i-1; j++) {
 			if (sort_by == 'title') {
-				if (items[j].snippet[sort_by] > items[j+1].snippet[sort_by]) {
+				x = items[j].snippet[sort_by].replace("\"", "");
+				y = items[j+1].snippet[sort_by].replace("\"", "");
+				if (x > y) {
 					var temp = items[j];
 					items[j] = items[j+1];
 					items[j+1] = temp;
